@@ -47,4 +47,4 @@ jobs:
           branch: prettier-code
           delete-branch: true
           commit-message: "style: prettier"
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.PR_PAT }}

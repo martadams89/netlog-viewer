@@ -35,7 +35,7 @@ jobs:
     with:
       # publish only on push to main or develop (releases are handled in another workflow)
       publish: >-
-        ${{ github.event_name == 'push' && 
+        ${{ github.event_name == 'push' &&
           (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/develop') }}
       #publish_dockerhub: >-
       #  ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}

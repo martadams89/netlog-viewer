@@ -17,7 +17,7 @@ jobs:
           context: .
           load: true
           push: false
-          tags: proftpd:latest
+          tags: netlog-viewer:latest
           cache-from: type=gha
           cache-to: type=gha,mode=max
 
@@ -29,4 +29,3 @@ jobs:
           framework: dockerfile
           quiet: true # show only failed checks
           container_user: 1000 # UID to run the container under to prevent permission issues
-
