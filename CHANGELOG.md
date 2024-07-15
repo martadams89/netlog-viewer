@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.3](https://github.com/martinadamsUL/netlog-viewer/compare/v1.1.2...v1.1.3) (2024-07-15)
+
+
+### Bug Fixes
+
+* pip requirements fix ([#13](https://github.com/martinadamsUL/netlog-viewer/issues/13)) ([91b7611](https://github.com/martinadamsUL/netlog-viewer/commit/91b7611573a9296fd546b1d5b3c9eb7511f752f7))
+* venv ([#15](https://github.com/martinadamsUL/netlog-viewer/issues/15)) ([5a22ec1](https://github.com/martinadamsUL/netlog-viewer/commit/5a22ec151598159b4c33d8f2f849b13025d3ac91))
+
 ## [1.1.2](https://github.com/martinadamsUL/netlog-viewer/compare/v1.1.1...v1.1.2) (2024-07-15)
 
 ### Bug Fixes
