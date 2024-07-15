@@ -2,10 +2,9 @@
 
 ## [1.0.1](https://github.com/martinadamsUL/netlog-viewer/compare/v1.0.0...v1.0.1) (2024-07-15)
 
-
 ### Bug Fixes
 
-* :ambulance: adjust run command to use python3 as container wouldn't start ([310c054](https://github.com/martinadamsUL/netlog-viewer/commit/310c0544cdcc41c66a95e02f529e78d9f2f6485f))
+- :ambulance: adjust run command to use python3 as container wouldn't start ([310c054](https://github.com/martinadamsUL/netlog-viewer/commit/310c0544cdcc41c66a95e02f529e78d9f2f6485f))
 
 ## 1.0.0 (2024-07-15)
 
