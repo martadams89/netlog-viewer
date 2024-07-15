@@ -1,4 +1,4 @@
-# Use the latest Ubuntu base image
+# Use the latest ubuntu base image
 FROM ubuntu:latest
 
 # Install necessary packages
