@@ -1,6 +1,6 @@
 # NetLog Viewer Docker Container
 
-This repository contains a Docker setup for serving the NetLog Viewer webapp, which is part of the Catapult project. The NetLog Viewer allows you to load and analyze NetLog dumps exported from Chrome. This setup uses an Ubuntu base image and Python's SimpleHTTPServer to serve the webapp.
+This repository contains a Docker setup for serving the NetLog Viewer webapp locally. The NetLog Viewer allows you to load and analyze NetLog dumps exported from Chrome. This setup uses an Ubuntu base image and Python's SimpleHTTPServer to serve the webapp.
 
 ## Table of Contents
 
