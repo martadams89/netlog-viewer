@@ -1,10 +1,13 @@
 # Use the latest ubuntu base image
 FROM ubuntu:24.04
 
-# Install necessary it and python
+# Install necessary packages
 RUN apt-get update && \
-    apt-get install -y python3 python3-pip git curl && \
+    apt-get install -y python3 python3-pip git curl npm && \
     apt-get clean
+
+# Install vulcanize
+RUN npm install -g vulcanize
 
 # Set the working directory
 WORKDIR /opt
