@@ -24,8 +24,8 @@ RUN ./netlog_viewer_build/build_for_appengine.py
 # Set the working directory to the appengine directory
 WORKDIR /opt/catapult/netlog_viewer/appengine
 
-# Verify the requirements file exists and display its contents
-RUN ls -l /opt/catapult/netlog_viewer/appengine && cat /opt/catapult/netlog_viewer/appengine/requirements.txt
+# Copy the custom main.py into the appengine directory
+COPY main.py /opt/catapult/netlog_viewer/appengine/main.py
 
 # Create and activate a virtual environment, then install Flask and other dependencies
 RUN python3 -m venv venv && \
