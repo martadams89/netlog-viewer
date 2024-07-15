@@ -2,10 +2,9 @@
 
 ## [1.1.1](https://github.com/martinadamsUL/netlog-viewer/compare/v1.1.0...v1.1.1) (2024-07-15)
 
-
 ### Bug Fixes
 
-* vulcanize ([fb9c924](https://github.com/martinadamsUL/netlog-viewer/commit/fb9c924fa7a195b1dd124e87fee91fc3dfa597e9))
+- vulcanize ([fb9c924](https://github.com/martinadamsUL/netlog-viewer/commit/fb9c924fa7a195b1dd124e87fee91fc3dfa597e9))
 
 ## [1.1.0](https://github.com/martinadamsUL/netlog-viewer/compare/v1.0.1...v1.1.0) (2024-07-15)
 
