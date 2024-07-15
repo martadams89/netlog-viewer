@@ -25,4 +25,4 @@ HEALTHCHECK --interval=30s --timeout=10s --start-period=5s --retries=3 \
   CMD curl -f http://localhost:8080/index.html || exit 1
 
 # Command to run the HTTP server
-CMD ["python", "-m", "SimpleHTTPServer", "8080"]
+CMD ["python3", "-m", "SimpleHTTPServer", "8080"]
