@@ -39,6 +39,8 @@ jobs:
           # This part is also where you can pass other options, for example:
           prettier_options: --write . --ignore-path .prettierignore --ignore-unknown
           only_changed: True # only run on new commits
+          # Set your custom token
+          github_token: ${{ secrets.PR_PAT }}
 
       - uses: peter-evans/create-pull-request@v6
         with:
