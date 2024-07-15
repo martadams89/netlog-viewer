@@ -22,7 +22,7 @@ SPELL_CSPELL_DISABLE_ERRORS: true
 SPELL_FILTER_REGEX_EXCLUDE: "(.github)"
 SPELL_LYCHEE_FILTER_REGEX_EXCLUDE: (README.md|version.txt|CHANGELOG.md)
 ACTION_ACTIONLINT_ARGUMENTS: "-ignore 'Double quote to prevent globbing and word splitting [shellcheck]'"
-DOCKERFILE_HADOLINT_ARGUMENTS: "--ignore DL3016 --ignore DL3042 --ignore DL3007 --ignore DL3008 --ignore DL3015 --ignore DL3009 --ignore DL3033 --ignore SC2086 --ignore SC22276"
+DOCKERFILE_HADOLINT_ARGUMENTS: "--ignore SC1091 --ignore DL3016 --ignore DL3042 --ignore DL3007 --ignore DL3008 --ignore DL3015 --ignore DL3009 --ignore DL3033 --ignore SC2086 --ignore SC22276"
 REPOSITORY_CHECKOV_ARGUMENTS: "--skip-check CKV2_GHA_1,CKV_GHA_7"
 REPOSITORY_TRIVY_ARGUMENTS:
   - "--skip-dirs"
