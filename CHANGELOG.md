@@ -2,10 +2,9 @@
 
 ## [1.1.4](https://github.com/martinadamsUL/netlog-viewer/compare/v1.1.3...v1.1.4) (2024-07-15)
 
-
 ### Bug Fixes
 
-* CKV_DOCKER_3 ([37a6104](https://github.com/martinadamsUL/netlog-viewer/commit/37a6104a5db5d989f54c395756b59c0ca47700c0))
+- CKV_DOCKER_3 ([37a6104](https://github.com/martinadamsUL/netlog-viewer/commit/37a6104a5db5d989f54c395756b59c0ca47700c0))
 
 ## [1.1.3](https://github.com/martinadamsUL/netlog-viewer/compare/v1.1.2...v1.1.3) (2024-07-15)
 
