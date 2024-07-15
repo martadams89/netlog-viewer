@@ -24,8 +24,11 @@ RUN ./netlog_viewer_build/build_for_appengine.py
 # Set the working directory to the appengine directory
 WORKDIR /opt/catapult/netlog_viewer/appengine
 
+# Verify the requirements file exists and display its contents
+RUN ls -l /opt/catapult/netlog_viewer/appengine && cat /opt/catapult/netlog_viewer/appengine/requirements.txt
+
 # Install Flask and other dependencies
-RUN pip3 install -r requirements.txt
+RUN pip3 install -r /opt/catapult/netlog_viewer/appengine/requirements.txt
 
 # Expose the port the app runs on
 EXPOSE 8080
