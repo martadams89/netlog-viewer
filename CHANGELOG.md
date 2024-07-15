@@ -2,10 +2,9 @@
 
 ## [1.1.2](https://github.com/martinadamsUL/netlog-viewer/compare/v1.1.1...v1.1.2) (2024-07-15)
 
-
 ### Bug Fixes
 
-* DL3016 ([470926b](https://github.com/martinadamsUL/netlog-viewer/commit/470926bb82a8d0057f3b7aac8886cc8f3f3d0687))
+- DL3016 ([470926b](https://github.com/martinadamsUL/netlog-viewer/commit/470926bb82a8d0057f3b7aac8886cc8f3f3d0687))
 
 ## [1.1.1](https://github.com/martinadamsUL/netlog-viewer/compare/v1.1.0...v1.1.1) (2024-07-15)
 
