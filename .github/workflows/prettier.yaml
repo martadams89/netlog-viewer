@@ -22,7 +22,6 @@ jobs:
       pull-requests: write
       actions: write
     steps:
-
       - name: Checkout
         uses: actions/checkout@v4
         with:
@@ -33,7 +32,7 @@ jobs:
           fetch-depth: 0
           # Make sure the value of GITHUB_TOKEN will not be persisted in repo's config
           persist-credentials: false
-  
+
       - name: Prettify code
         uses: creyD/prettier_action@v4.3
         with:
