@@ -24,6 +24,7 @@ on:
         required: false
         description: the string to extract semver labels from. If empty, the ref/tag will be used (if on.tag trigger).
         default: ""
+  workflow_dispatch:
 
 jobs:
   build_and_push:
