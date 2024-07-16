@@ -18,7 +18,7 @@ on:
           Whether to publish the image to Docker Hub (only if publish=true).
           Needs DOCKER_USERNAME and DOCKER_PASSWORD secrets (use secrets: inherit on the calling workflow).
         required: false
-        default: false
+        default: true
       version:
         type: string
         required: false
