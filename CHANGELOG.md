@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/martinadamsUL/netlog-viewer/compare/v1.0.0...v1.0.1) (2024-07-16)
+
+
+### Bug Fixes
+
+* ci - enable dockerhub builds ([#27](https://github.com/martinadamsUL/netlog-viewer/issues/27)) ([a779b43](https://github.com/martinadamsUL/netlog-viewer/commit/a779b431af10a60e36224d6ec590da85d4f4df76))
+
 ## 1.0.0 (2024-07-16)
 
 
