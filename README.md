@@ -22,13 +22,19 @@ These instructions will help you set up and run the NetLog Viewer webapp using D
 
 - Docker installed on your machine. You can download Docker from [here](https://www.docker.com/products/docker-desktop).
 
+### Pull the Docker Image
+
+You can pull the latest image with `docker pull ghcr.io/martinadamsul/netlog-viewer:latest`
+
 ### Building the Docker Image
+
+Instead of pulling the image, you can build it yourself
 
 1. Clone this repository:
 
    ```bash
-   git clone https://github.com/your-username/netlogviewer-docker.git
-   cd netlogviewer-docker
+   git clone https://github.com/martinadamsUL/netlog-viewer.git
+   cd netlog-viewer
    ```
 
 2. Build the Docker image:
@@ -49,7 +55,7 @@ This will start the container in detached mode and map port 8080 of the containe
 
 ### Running in Docker compose
 
-You can bring up the container using docker-compose.
+You can also bring up the container using docker-compose.
 
 ```bash
 ---
