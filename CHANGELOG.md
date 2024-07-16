@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.5](https://github.com/martinadamsUL/netlog-viewer/compare/v1.1.4...v1.1.5) (2024-07-16)
+
+
+### Bug Fixes
+
+* store code locally and run script to startup ([#19](https://github.com/martinadamsUL/netlog-viewer/issues/19)) ([cd60284](https://github.com/martinadamsUL/netlog-viewer/commit/cd602841e2f7510690311b47a7e6ce89d6a777a4))
+
 ## [1.1.4](https://github.com/martinadamsUL/netlog-viewer/compare/v1.1.3...v1.1.4) (2024-07-15)
 
 ### Bug Fixes
