@@ -82,7 +82,7 @@ jobs:
         id: meta_dockerhub
         uses: docker/metadata-action@v5
         with:
-          images: docker.io/${{ github.repository }}
+          images: docker.io/${{ env.DOCKER_USERNAME}}/${{ github.event.repository.name }}
           tags: |
             type=semver,pattern={{version}},value=${{ inputs.version }}
             type=semver,pattern={{major}}.{{minor}},value=${{ inputs.version }}
