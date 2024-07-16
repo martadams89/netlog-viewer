@@ -1,6 +1,7 @@
 # NetLog Viewer Docker Container
 
-This repository contains a Docker setup for serving the NetLog Viewer webapp locally. The NetLog Viewer allows you to load and analyze NetLog dumps exported from Chrome. This setup uses an Ubuntu base image and Python's SimpleHTTPServer to serve the webapp.
+This repository contains a Docker image for serving the NetLog Viewer webapp locally.
+The NetLog Viewer allows you to load and analyze NetLog dumps exported from Chromium Basesd browsers (Google Chrome, Microsoft Edge)
 
 ## Table of Contents
 
@@ -46,11 +47,26 @@ docker run -d -p 8080:8080 netlogviewer
 
 This will start the container in detached mode and map port 8080 of the container to port 8080 on your host machine.
 
+### Running in Docker compose
+
+You can bring up the container using docker-compose.
+
+```bash
+---
+services:
+  netlogviewer:
+    image: ghcr.io/martinadamsUL/netlogviewer:latest
+    container_name: rnetlogviewer
+    ports:
+      - 8080:8080
+    restart: unless-stopped
+```
+
 ### Accessing the Webapp
 
 Open your web browser and navigate to:
 
-`http://localhost:8080/index.html`
+`http://localhost:8080/`
 
 You should see the NetLog Viewer webapp interface.
 
