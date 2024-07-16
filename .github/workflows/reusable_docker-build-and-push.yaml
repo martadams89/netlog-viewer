@@ -25,6 +25,24 @@ on:
         description: the string to extract semver labels from. If empty, the ref/tag will be used (if on.tag trigger).
         default: ""
   workflow_dispatch:
+    inputs:
+      publish:
+        type: boolean
+        description: Whether to publish the image to Github Registry
+        required: false
+        default: true
+      publish_dockerhub:
+        type: boolean
+        description: |
+          Whether to publish the image to Docker Hub (only if publish=true).
+          Needs DOCKER_USERNAME and DOCKER_PASSWORD secrets (use secrets: inherit on the calling workflow).
+        required: false
+        default: true
+      version:
+        type: string
+        required: false
+        description: the string to extract semver labels from. If empty, the ref/tag will be used (if on.tag trigger).
+        default: ""
 
 jobs:
   build_and_push:
