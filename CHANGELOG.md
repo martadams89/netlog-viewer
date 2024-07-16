@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://github.com/martinadamsUL/netlog-viewer/compare/v1.1.5...v1.2.0) (2024-07-16)
+
+
+### Features
+
+* streamlined dockerfile ([#21](https://github.com/martinadamsUL/netlog-viewer/issues/21)) ([7ed7763](https://github.com/martinadamsUL/netlog-viewer/commit/7ed7763c7b6c9c66dda531bcc17c8bf4c76b94dc))
+
 ## [1.1.5](https://github.com/martinadamsUL/netlog-viewer/compare/v1.1.4...v1.1.5) (2024-07-16)
 
 
