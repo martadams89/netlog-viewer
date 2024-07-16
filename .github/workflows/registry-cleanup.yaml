@@ -1,0 +1,31 @@
+name: Delete old container images
+
+on:
+  schedule:
+    - cron: "0 0 * * *" # every day at midnight
+  workflow_dispatch:
+
+jobs:
+  clean-ghcr:
+    name: Delete old unused container images
+    runs-on: ubuntu-latest
+    steps:
+      - name: set lower case repo name
+        run: |
+          echo "reponame=${REPO,,}" >>${GITHUB_ENV}
+        env:
+          REPO: "${{ github.event.repository.name }}"
+
+      - name: Delete old images
+        uses: snok/container-retention-policy@v2
+        id: main-images
+        with:
+          image-names: ${{ env.reponame }}
+          cut-off: One day ago UTC
+          keep-at-least: 5
+          skip-tags: "v*.*.*, latest, v*, *.*.*, *.*"
+          filter-tags: "*"
+          account-type: org
+          org-name: ${{ github.repository_owner }}
+          token: ${{ secrets.GITHUB_TOKEN }}
+          token-type: github-token
