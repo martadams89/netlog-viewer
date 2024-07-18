@@ -25,7 +25,6 @@ jobs:
           keep-at-least: 5
           skip-tags: "v*.*.*, latest, v*, *.*.*, *.*"
           filter-tags: "*"
-          account-type: org
-          org-name: ${{ github.repository_owner }}
+          account: user
           token: ${{ secrets.GITHUB_TOKEN }}
           token-type: github-token
