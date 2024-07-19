@@ -20,11 +20,10 @@ jobs:
         uses: snok/container-retention-policy@v3.0.0
         id: main-images
         with:
-          image-names: ${{ env.reponame }}
-          cut-off: One day ago UTC
-          keep-at-least: 5
-          skip-tags: "v*.*.*, latest, v*, *.*.*, *.*"
-          filter-tags: "*"
           account: user
           token: ${{ secrets.GITHUB_TOKEN }}
-          token-type: github-token
+          cut-off: 7d
+          image-names: ${{ env.reponame }}
+          image-tags: "!latest"
+          keep-n-most-recent: 5
+          tag-selection: untagged
