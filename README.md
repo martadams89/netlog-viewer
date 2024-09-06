@@ -24,7 +24,7 @@ These instructions will help you set up and run the NetLog Viewer webapp using D
 
 ### Pull the Docker Image
 
-You can pull the latest image with `docker pull ghcr.io/martinadamsul/netlog-viewer:latest`
+You can pull the latest image with `docker pull ghcr.io/martadams89/netlog-viewer:latest`
 
 ### Building the Docker Image
 
