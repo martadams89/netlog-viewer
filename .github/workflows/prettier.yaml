@@ -42,7 +42,7 @@ jobs:
           # Set your custom token
           github_token: ${{ secrets.PR_PAT }}
 
-      - uses: peter-evans/create-pull-request@v6
+      - uses: peter-evans/create-pull-request@v7
         with:
           title: "chore(style): prettier code"
           body: "The following changes will make your code prettier."
