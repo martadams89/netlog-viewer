@@ -13,6 +13,7 @@
       "matchManagers": ["github-actions"],
       "matchUpdateTypes": ["minor", "patch"],
       "automerge": true,
+      "autoApprove": true,
       "pinDigests": true,
       "schedule": ["every weekday after 4am"]
     }
