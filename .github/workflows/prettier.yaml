@@ -25,13 +25,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          token: ${{ secrets.PR_PAT }}
           # Make sure the actual branch is checked out when running on pull requests
           ref: ${{ github.head_ref }}
           # This is important to fetch the changes to the previous commit
           fetch-depth: 0
-          # Make sure the value of GITHUB_TOKEN will not be persisted in repo's config
-          persist-credentials: false
+          token: ${{ secrets.PRETTIER }}
 
       - name: Prettify code
         uses: creyD/prettier_action@v4.3
@@ -39,14 +37,14 @@ jobs:
           # This part is also where you can pass other options, for example:
           prettier_options: --write . --ignore-path .prettierignore --ignore-unknown
           only_changed: True # only run on new commits
-          # Set your custom token
-          github_token: ${{ secrets.PR_PAT }}
 
       - uses: peter-evans/create-pull-request@v7
         with:
-          title: "chore(style): prettier code"
+          committer: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
+          author: ${{ github.actor }} <${{ github.actor_id }}+${{ github.actor }}@users.noreply.github.com>
+          title: "Prettier code"
           body: "The following changes will make your code prettier."
           branch: prettier-code
           delete-branch: true
           commit-message: "style: prettier"
-          token: ${{ secrets.PR_PAT }}
+          token: ${{ secrets.PRETTIER }}
